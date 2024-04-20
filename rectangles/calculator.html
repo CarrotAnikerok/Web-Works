@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        #area {
+            height: 550px;
+            border: 1px #aaa dashed;
+            position: relative;
+        }
+        .rect {
+            position: absolute;
+            transition: all ease-in-out 0.5s;
+        }
+        .rect:hover { transform: rotate(360deg); }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <title>Калькулятор :)</title>
+</head>
+<body>
+    <p> Прив</p>
+    <button id="qq">Calc</button>
+    <button id="ww">Прямоугольник 10x</button>
+    <button id="cc">Прямоугольник 1x</button>
+    <div id="area"></div>
+</body>
+<script src="rectangle.js"></script>
+<script src="calc.js"></script>
+<script>
+    Array.prototype.toConsole = function () {
+        for (let i = 0; i < this.length - 1; i++)
+            console.log(this[i]);
+    }
+
+    let ee = [12, 34, 345, 32, 56];
+    ee.toConsole();
+</script>
+</html>

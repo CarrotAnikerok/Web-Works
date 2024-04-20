@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Пиксели</title>
+    <link rel="shortcut icon" href="img/kit_head.png" type="image/x-icon">
+    <link href="main.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body id="krik">
+    <header>
+        <h1 id="blink">8-BIT</h1>
+        <div class = "sprite">
+            <img src = "img/kit_head.png" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "../main.html">Почему 8-bit?</a></li>
+                <li><a href = "music.html">Музыка</a></li>
+                <li><a href = "pic.html" style="color: yellow">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id = "content">
+     <p><img id="largeImg" src="img/back3.gif" alt="Large image"></p>
+
+  <ul id="thumbs">
+    <li>
+      <a href="img/back3.gif" title="Image 1"><img src="img/back3.gif"></a>
+    </li>
+    <li>
+      <a href="img/back1.gif" title="Image 2"><img src="img/back1.gif"></a>
+    </li>
+    <li>
+      <a href="img/back2.gif" title="Image 3"><img src="img/back2.gif"></a>
+    </li>
+      <li>
+      <a href="img/8.jpg" title="Image 4"><img src="img/8.jpg"></a>
+    </li>
+      <li>
+      <a href="img/9.gif" title="Image 5"><img src="img/9.gif"></a>
+    </li>
+      <li>
+      <a href="img/10.gif" title="Dream"><img src="img/10.gif"></a>
+    </li>
+      <li>
+      <a href="img/11.jpg" title="Image 6"><img src="img/11.jpg"></a>
+    </li>
+      <li>
+      <a href="img/11.gif" title="by Karina Formanova"><img src="img/11.gif"></a>
+    </li>
+      <li>
+      <a href="img/12.jpg" title="Saint Petersburg
+by DownScarf"><img src="img/12.jpg"></a>
+    </li>
+      <li>
+      <a href="img/12.gif" title="by saltiestbunny"><img src="img/12.gif"></a>
+    </li>
+      <li>
+      <a href="img/13.jpg" title="Image 7"><img src="img/13.jpg"></a>
+    </li>
+      <li>
+      <a href="img/14.jpg" title="Image 8"><img src="img/14.jpg"></a>
+    </li>
+      <li>
+      <a href="img/13.gif" title="Blossom Breeze
+by GenuineHumanArt"><img src="img/13.gif"></a>
+    </li>
+      <li>
+      <a href="img/15.jpg" title="by Samuel Berry"><img src="img/15.jpg"></a>
+    </li>
+      <li>
+      <a href="img/16.jpg" title="by 6VCR"><img src="img/16.jpg"></a>
+    </li>
+      <li>
+      <a href="img/14.gif" title="by Karina Formanova"><img src="img/14.gif"></a>
+    </li>
+  </ul>
+    </article>
+</body>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+
+//Смена цвета в голове
+    function changeColor(){
+		let color = "#FF0000|#FF8000|#FFFF00|#00FF00|#00FFFF|#0000FF";
+		color = color.split("|");
+		let wen = document.getElementsByTagName("h1");
+
+		for(let i=0;i<wen.length;i++){
+			wen[i].style.color=color[parseInt(Math.random() * color.length)];
+		}
+	}
+	setInterval("changeColor()",500);
+  </script>

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DECKPACK</title>
+    <!-- Подсоединение css -->
+    <link href="mainDeckpack.css" rel="stylesheet" />
+    <!-- Подсоединение jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://js.cx/libs/animate.js"></script>
+</head>
+<body>
+    <header>
+        <h1>СДЕЛАЙ СВОЙ ДЕКПАК</h1>
+    </header>
+    <article id="content">
+        <div id="card">
+            <img src="img/Card_base.png" class="cardBase" />
+            <img src="img/BackFon.png" id="backFon"/>
+            <div id="cardTitle"></div>
+            <img id="mainImg" />
+            <img src="img/Card_Type.png" id="cardType" />
+            <div id="cardTypeText"></div>
+            <div id="cardSpecText"></div>
+            <div id="desc">
+                <div id="activeEffect" style="display: none;">
+                    <img src="img/Active_effect.png" id="activeEffectImg" />
+                    <span id="star">*</span>
+                    <span id="activeEffectText"></span>
+                </div>
+                <span id="star2">*</span>
+                <div id="passiveEffect">
+                    <span id="passiveEffectText"></span>
+                </div>
+                <div id="description">
+                    <span id="descriptionText"></span>
+                </div>
+            </div>
+            <img src="img/Suit/Suit_Chaos.png" class="cardBase" id="suitImg" />
+            <img src="img/Level/Level_None.png" class="cardBase" id="levelImg" />
+            <div id="stats" style="display: none;" >
+                <img src="img/Stats/ATK.png" class="cardBase" id="atkImg" />
+                <span id="atkText"></span>
+                <img src="img/Stats/KD.png" class="cardBase" id="kdImg" style="display: none;" />
+                <span id="kdText" style="display: none;"></span>
+                <img src="img/Stats/HP.png" class="cardBase" id="hpImg" style="display: none;" />
+                <span id="hpText" style="display: none;"></span>
+            </div>
+        </div>
+
+        <div id="mainText">
+            <p class="firstLine">
+                Название:  <input type="text" name="title" id="title" placeholder="Юный некромант..." />
+            </p>
+            <p class="firstLine">
+                Вид карты:  <input type="text" id="cardSpec" placeholder="Маг"/>
+            </p>
+            <div id="menu">
+                <span>Выбрать тип: </span>
+                <button type=button data-action="Creature" id="butt">Существо</button>
+                <button type=button data-action="Action">Действие</button>
+                <button type=button data-action="Reaction">Реакция</button>
+                <button type=button data-action="BonusAction">Бонусное действие</button>
+                <button type=button data-action="Weapon">Снаряжение</button>
+                <p>
+                    <button type=button data-action="Custom">Другое</button>
+                    <input type="text" name="typeText" id="typeText" style="display: none;"  placeholder="*Океанид..."/>
+                </p>
+            </div>
+
+            <div id="textArea">
+                <span>
+                    <p>Пассивная абилка</p>
+                    <textarea id="passiveInput" placeholder="Вы не можете нанести урон этой карте...."></textarea>
+                </span>
+                <span>
+                    <p>Описание</p>
+                    <textarea id="descriptionInput" placeholder="Страшный сон из древних земель..."></textarea>
+                </span>
+                <span>
+                    <p>Активная абилка</p>
+                    <button type=button id="activeButton">Включить активную абилку</button>
+                    <textarea id="activeInput" style="display: none;" placeholder="Добавляет в руку одну карту..."></textarea>
+                </span>
+            </div>
+
+            <p>
+                <button type=button id="statsButton">Добавить статы</button>
+                <div id="statsInput" style="display: none;">
+                    <button type=button id="atkButton">Урон</button>
+                    <input type="text" id="atkInput" placeholder="1d6 + 10"/>
+                    <button type=button id="kdButton">КД</button>
+                    <input type="text" id="kdInput" placeholder="21" style="display: none;" />
+                    <button type=button id="hpButton" >ХП</button>
+                    <input type="text" id="hpInput" placeholder="120" style="display: none;" />
+                </div>
+            </p>
+            <p>
+                <div id="suit">
+                    <span>Выбрать масть: </span>
+                    <input id="cat" type="image" data-action="Chaos" src="img/suit_button/Chaos_Button.png">
+                    <input type="image" data-action="Ambitions" src="img/suit_button/Ambitions_Button.png">
+                    <input type="image" data-action="Knowledge" src="img/suit_button/Knowledge_Button.png">
+                    <input type="image" data-action="Life" src="img/suit_button/life_button.png">
+                    <input type="image" data-action="Order" src="img/suit_button/Order_Button.png">
+                </div>
+            </p>
+            <p>
+                <div id="level">
+                    <span>Выбрать уровень: </span>
+                    <input type="image" data-action="None" src="img/level_icon/Level_none.png">
+                    <input type="image" data-action="One" src="img/level_icon/Level_1.png">
+                    <input type="image" data-action="Two" src="img/level_icon/Level_2.png">
+                    <input type="image" data-action="Three" src="img/level_icon/Level_3.png">
+                    <input type="image" data-action="Four" src="img/level_icon/Level_4.png">
+                    <input type="image" data-action="Five" src="img/level_icon/Level_5.png">
+                    <input type="image" data-action="Six" src="img/level_icon/Level_6.png">
+                    <input type="image" data-action="Seven" src="img/level_icon/Level_7.png">
+                </div>
+            </p>
+            <span>Выбрать изображение: </span>
+            <input type="file" id="imgFile" />
+            </p>
+            <p>
+                <button type=button id="cleanButton">Отчистить карту</button>
+            </p>
+        </div>
+    </article>
+</body>
+<script src = "scriptDeckPack.js"></script>
+</html>

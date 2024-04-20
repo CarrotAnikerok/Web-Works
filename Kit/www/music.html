@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Пиксели</title>
+    <link rel="shortcut icon" href="img/kit_head.png" type="image/x-icon">
+    <link href="main.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body id="krik">
+    <header>
+        <h1 id="blink">8-BIT</h1>
+        <div class = "sprite">
+            <img src = "img/kit_head.png" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "../main.html">Почему 8-bit?</a></li>
+                <li><a href = "music.html" style="color: yellow" >Музыка</a></li>
+                <li><a href = "pic.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id = "content">
+        <div class = "contentBlock3">
+        <p>Многие из тех, кто родился на рубеже 80х-90х, наверняка застали популярные компьютеры ZX Spectrum и игровые консоли Dendy и SEGA. Многие помнят характерное звучание музыки из старых видеоигр. Некоторым людям эти звуки полюбились настолько, что на их основе сформировался пласт собственной музыкальной культуры.
+            Сhiptune и 8-bit стали названиями целых музыкальных жанров.
+            Жанров, возникших на базе тех простеньких мелодий, что сопровождали приключения супербратьев Марио или отважных спецназовцев из подразделения «Контра».</p>
+        </div>
+        <div id="op">
+            <p>В плане музыки чиптюном называется музыка, которая делалась изначально на базе чипа от приставки, с помощью самой приставки или хотя бы эмулятора.</p>
+            <p>8-бит же — музыка, сделанная уже на компьютере с помощью программного обеспечения, например FL Studio.</p>
+        </div>
+        <h2>Откуда взялись эти звуки?</h2>
+        <div class = "contentBlock3">
+            <p>В конце 80-х началась тихая замена аркадных игровых автоматов на компьютеры (ZX Spectrum, Commodore 64, Atari, Amiga) и приставки – те самые Nintendo, Gameboy, Sega.
+
+            <p>Тогда в домашних компьютерах и игровых приставках чаще всего использовались восьмиразрядные процессоры, выдающие, в частности, тот самый резковатый, булькающий, хлопающий и шипящий звук, который складывался в относительно простенькие мелодии. Иногда и в более сложные. «Инструментами» оказывались звуковой чип и специальная программа, на которой выстраивались параметры каждого звука и их последовательность, часто состоящая из четырёх каналов.
+
+            <p>З<b>вуковой чип MOS 6581</b> — микросхема, выполняющая функцию программируемого звукогенератора, использовавшаяся в бытовых компьютерах фирмы Commodore International. Она была одной из первых микросхем подобного типа, предназначенных для использования в бытовых компьютерах, до появления у них возможностей воспроизведения цифрового звука.</p>
+        </div>
+        <img src="img/chip.jpg" style='margin: 40px auto 0px auto; display: block;'>
+        <div class = "contentBlock3">
+            <p>Мелодия генерируется звуковым чипом в режиме реального времени. Поскольку чипы тех времён не могут состязаться в мощности с современными звуковыми картами, звук, который они воспроизводят, получается очень специфическим.
+                Старинные чипы выдают тот характерный, скрипучий и прыгающий саунд восьмидесятых и девяностых: все эти «пыщ-пыщ», «дрын-дрын» и «бвоп-бвоп».</p>
+        </div>
+        <h2> Направления 8-bit музыки</h2>
+        <div id="menu">
+            <div class="audioBox">
+                <div class = "contentBlock1" >
+                <h3>Исполнители chiptune</h3>
+                    <p>Свойство музыкантов, работающих на этой сцене, — даже не специфический звук, а оборудование, которое они используют. Большинство исполнителей старой школы борются за чистоту звучания и потому берут в студию и на концерты настоящую старую электронику.
+                        В основном используется устаревшая продукция компании Nintendo: приставки Game Boy и NES.</p>
+                    <p>Использование восьмибитных устройств (приставки, компьютеры), программ-трекеров и специфической четырёхканальной записи. Музыка исключительно инструментальная. В той или иной степени chiptune представляют такие проекты, как Anamanaguchi, Sabrepulse, Goto80, Xinon, 8 Beat Weapon,
+                        Nullsleep, Kola Kid. Далеко не все из них являются «чистым чиптюном», но сейчас это довольно не часто встречающаяся разновидность подобной музыки.</p>
+                </div>
+                <div class = "audio">
+                    <h3>Fragile Bishoujo by Watashimo</h3>
+         <button data-action="ode_play" class = "play">Играть/Пауза</button>
+         <button data-action="ode_stop" class = "stop">Стоп</button>
+                    <h3>Bullcactus by Goto80</h3>
+         <button data-action="goto80_play" class = "play">Играть/Пауза</button>
+         <button data-action="goto80_stop" class = "stop">Стоп</button>
+                    <h3>stage 2 by Kola Kid</h3>
+         <button data-action="kola_play" class = "play">Играть/Пауза</button>
+         <button data-action="kola_stop" class = "stop">Стоп</button>
+                    <h3>Stardust by Xinon</h3>
+         <button data-action="xenon_play" class = "play">Играть/Пауза</button>
+         <button data-action="xenon_stop" class = "stop">Стоп</button>
+                </div>
+            </div>
+            <div class="audioBox">
+        <div class = "contentBlock1">
+            <h3>Исполнители 8-bit</h3>
+            <p>8-bit — это музыка, родственная chiptune, растущая из тех же корней, но на самом деле это несколько другое явление. Используются возможности современных компьютеров и оборудования, традиционные синтезаторы и сэмплеры.
+                Здесь главное – это воссоздание именно такого звучания из старых компьютеров и приставок.</p>
+            <p> Сам по себе звук 8-bit — явление более широкое, на самом деле это очень большая среда, которой не так легко дать чёткое определение, поскольку сюда обычно вносят «всё», включая периферийные стили, которые развились из 8-bit, обзаведясь своими характерным приметами и являясь уже несколько «отдельной песней». В чистом виде – полностью электронная музыка с высоким темпом, не очень выделенной ритм-секцией и «высоким» частотным диапазоном,
+                чаще всего – без вокала. Одними из представителями являются Crystal Castles, Bondage Fairies, You Love Her Coz She’s Dead, Dubmood,
+                777minus111. Также к жанру относятся bitpop (восьмибитный вариант lo-fi pop) и тяжелые гитарные партии с использованием 8-bit.</p>
+        </div>
+                <div class = "audio">
+                    <h3>Expectations by Bondage Fairies</h3>
+         <button data-action="fairy_play" class = "play">Играть/Пауза</button>
+         <button data-action="fairy_stop" class = "stop">Стоп</button>
+                    <h3>disko komander 7.0 by 777minus111</h3>
+         <button data-action="disko_play" class = "play">Играть/Пауза</button>
+         <button data-action="disko_stop" class = "stop">Стоп</button>
+                    <h3>Runaway Train by YLHCSD </h3>
+         <button data-action="train_play" class = "play">Играть/Пауза</button>
+         <button data-action="train_stop" class = "stop">Стоп</button>
+                    <h3>Toffelskater by Dubmood</h3>
+         <button data-action="skater_play" class = "play">Играть/Пауза</button>
+         <button data-action="skater_stop" class = "stop">Стоп</button>
+                    <h3>Char by Crystal Castles</h3>
+         <button data-action="char_play" class = "play">Играть/Пауза</button>
+         <button data-action="char_stop" class = "stop">Стоп</button>
+                    </div>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="myScript.js"></script>
+</html>

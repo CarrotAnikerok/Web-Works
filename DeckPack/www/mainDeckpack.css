@@ -1,0 +1,319 @@
+﻿body {
+    background-color: #361A15;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(169, 77, 42, 0.7);
+    margin-left: 140px;
+    margin-right: 140px;
+    color: rgba(64, 29, 6, 1);
+    padding: 0px;
+}
+
+textarea {
+    resize: none;
+    height: 65px;
+    width: 200px;
+}
+
+h1 {
+    font-family: Ebberon;
+    font-size: 5vw;
+    letter-spacing: 10px;
+    border: 9px solid brown;
+    margin: 0px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+button {
+    font-family: Book;
+    color: brown;
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+    background-color: rgba(64, 29, 6, 1);
+    border: 3px solid brown;
+    border-radius: 10px;
+    box-shadow: 3px 4px 0px 0px brown;
+    font-weight: 600;
+}
+
+.transf {
+        transform: translateY(2px);
+}
+
+button:hover {
+    transform: translateY(2px);
+    /*box-shadow: 0px 0px 0px 0px;*/
+}
+
+input[type=image] {
+    width: 70px;
+    height: 70px;
+}
+
+.firstLine {
+    display: inline-block;
+    margin-inline: 50px;
+}
+
+#suit, #level {
+    position: relative;
+    right: 65px;
+}
+#suit span, #level span {
+    position:relative;
+    bottom: 31px;
+}
+#textArea > span {
+    display: inline-block;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#textArea p {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#textArea button, #activeInput {
+    position: relative;
+    right: 10px;
+}
+
+
+#suitB {
+}
+
+#suitB:hover {
+    transform: translateY(2px);
+}
+
+#content {
+    min-height: 700px;
+    min-width: 550px;
+    max-height: 900px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(169, 77, 42, 0.7);
+    position: relative;
+    border: 9px solid brown;
+}
+
+#card {
+    max-height: 689px;
+    max-width: 500px;
+    position: absolute;
+    right: 5%;
+}
+
+#mainText {
+    text-align: center;
+    font-family: Ebberon;
+    max-width: 1000px;
+    font-size: 20px;
+    color: rgba(64, 29, 6, 1);
+    font-weight: 600;
+}
+
+.cardBase {
+    width: 501px;
+    height: 690px;
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+}
+
+
+#cardTitle {
+    font-family: Ebberon;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    max-width: 350px;
+    height: 35px;
+    right: 0%;
+    left: -425px;
+}
+
+#mainImg {
+    width: 260px;
+    height: 310px;
+    z-index: 1;
+    position: absolute;
+    top: 64px;
+    left: -378px;
+    right: 0%;
+}
+
+#cardType {
+    position: absolute;
+    z-index: 4;
+    width: 500px;
+    height: 690px;
+    right: 0%;
+}
+
+#cardTypeText {
+    font-family: Ebberon;
+    color: #d6bbad;
+    position: absolute;
+    z-index: 5;
+    max-width: 450px;
+    height: 35px;
+    right: 0%;
+    left: -481px;
+    top: 394px;
+}
+
+#cardSpecText {
+    font-family: Ebberon;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    max-width: 350px;
+    height: 35px;
+    right: 0%;
+    left: -425px;
+}
+
+#desc {
+    position: absolute;
+    z-index: 6;
+    right: 0%;
+    top: 424px;
+    left: -460px;
+}
+
+#activeEffectImg {
+    width: 380px;
+    height: 51px;
+}
+
+#activeEffectText {
+    font-family: Ebberon;
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 67px;
+    top: 8px;
+}
+
+#activeButton {
+    font-size: 16px;
+    max-width: 110px;
+    font-weight: 600;
+}
+
+#star {
+    font-family: Ebberon;
+    position: absolute;
+    left: 57px;
+    top: 8px;
+}
+
+#star2 {
+    font-family: Ebberon;
+    position: relative;
+    left: 15px;
+}
+
+#passiveEffect {
+    position: relative;
+    top: -18px;
+}
+
+#passiveEffectText {
+    font-family: Ebberon;
+    position: relative;
+    max-width: 350px;
+    max-height: 60px;
+    display: inline-block;
+    left: 25px;
+}
+
+#description {
+    position: relative;
+    top: -10px;
+}
+
+#descriptionText {
+    font-family: Ebberon;
+    color: #4c413d;
+    position: relative;
+    max-width: 350px;
+    max-height: 60px;
+    display: inline-block;
+    left: 15px;
+}
+
+#stats span {
+    position: absolute;
+    z-index: 8;
+    top: 375px;
+    text-align: center;
+    max-width: 100px;
+    font-family: Book;
+    right:0%;
+}
+
+#atkText {
+    color: #3f1a1a;
+    left: -462px;
+}
+
+#kdText {
+    color: #b9bdc5;
+    left: -300px;
+    font-size: 16px;
+}
+
+#hpText {
+    color: #082105;
+    left: -148px;
+}
+
+#backFon {
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 64px;
+    left: -376px;
+    right: 0%;
+}
+
+/*#suit input {
+    border: 7px double rgba(64, 29, 6, 1);
+}*/
+
+
+
+@font-face {
+    font-family: "Ebberon";
+    src: url(fonts/Ebberon.ttf);
+}
+
+@font-face {
+    font-family: "Fifaks";
+    src: url(fonts/Fifaks.ttf);
+}
+
+@font-face {
+    font-family: "Book";
+    src: url(fonts/Book.ttf);
+}
